@@ -1,0 +1,41 @@
+clc
+clear
+close all
+image=imread('Pavia University.tif');
+tic
+[file adrs]=uigetfile('train.tif','select train');
+train=imread([adrs file]);
+%
+test=imread('Test.tif');
+image=double(image);
+band=103
+class=9;
+%% normailize data
+for i=1:band
+ image(:,:,i)=(image(:,:,i)-min(min(image(:,:,i))))/...
+ (max(max(image(:,:,i)))-min(min(image(:,:,i))));
+end
+for i=1:class
+ [a_tr(i).number b_tr(i).number]=find(train==i);
+ [a_te(i).number b_te(i).number]=find(test==i);
+end
+ik=1;
+for i=1:class
+ for k=1:length(a_tr(i).number)
+
+ training_vec(ik,:)=image(a_tr(i).number(k), b_tr(i).number(k),:);
+ Label_tr(ik,1)=i;
+ ik=ik+1;
+
+ end
+end
+training_vec =double(training_vec(:,[90,92,22,6,97,98,99,91,67,52]))
+ik=1;
+for i=1:class
+ for k=1:length(a_te(i).number)
+ testing_vec(ik,:)=image(a_te(i).number(k), b_te(i).number(k),:);
+ Label_te(ik,1)=i;
+ ik=ik+1;
+ end
+end
+testing_vec = double(testing_vec(:,[90,92,22,6,97,98,99,91,67,52]))
