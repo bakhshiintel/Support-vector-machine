@@ -32,8 +32,18 @@ For image classification with different algorithms, we need training and test da
 ![KNN](https://github.com/bakhshiintel/Support-vector-machine/assets/98385786/e4c4ba88-aab2-43c0-b21c-8f7e51f83f1f)      KNN
 
 
+In the links below, the details of the project are written in Farsi, and the MATLAB code is also placed at the end of the project.
+ML
 
+https://mega.nz/file/jhEnBQwI#bc1LUHTNaw8vCnX9MOtfKyjfzmA1LrekXkJltErAgbQ
 
+SVM
+
+https://mega.nz/file/rsVhCY7A#rsoIJ2eTuLrm-CKUhBOZUhm0u9ZO5p87Z_9AUa5Mq8c
+
+KNN
+
+https://mega.nz/file/npd1BazI#qMXVXcNl_fZAqtRFCKT0WSMUH9VjLlpqZTQAVDLJ3tI
 
 
 
