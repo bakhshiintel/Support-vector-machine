@@ -33,6 +33,7 @@ For image classification with different algorithms, we need training and test da
 
 
 In the links below, the details of the project are written in Farsi, and the MATLAB code is also placed at the end of the project.
+
 ML
 
 https://mega.nz/file/jhEnBQwI#bc1LUHTNaw8vCnX9MOtfKyjfzmA1LrekXkJltErAgbQ
